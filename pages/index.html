@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+    LavaCactus Repository Template
+{% endblock %}
+
+{% block body %}
+
+<div class="text-center bg-body-tertiary rounded-3">
+    <img src="{% static 'images/logo.png' %}" class="bi mt-4 mb-3" width="100" height="100">
+    <h1 class="text-body-emphasis">LavaCactus Repository Template</h1>
+    <p class="col-lg-8 mx-auto fs-5 text-muted">
+      Open source template for lavacactus projects on GitHub
+    </p>
+    <div class="d-inline-flex gap-2 mb-5">
+        <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="https://github.com/libresource/lavacactus-repository-template" target="_blank">Our GitHub</a>
+      <a class="btn btn-outline-info btn-lg px-4 rounded-pill" href="{% url '/about.html' %}">About</a>
+    </div>
+  </div>
+
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+
+    <div class="col-lg-6">
+      <h2>Mission</h2>
+      <p>
+          To provide quickstart with lavacactus projects on GitHub
+      </p>
+    </div>
+
+    <div class="col-lg-6">
+      <h2>All organization projects are free</h2>
+      <p>
+          This is the open source project with <b>GPL-3.0 license</b>.
+            Be free to use, fork, clone and contribute.
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
